@@ -27,7 +27,11 @@ func MoneyDefault(c *gin.Context) {
 		c.JSON(500, gin.H{"error": "Internal server error"})
 		return
 	}
-	c.JSON(http.StatusOK, resp)
+
+	response := dto.MoneyResponse{
+		Text: resp,
+	}
+	c.JSON(http.StatusOK, response)
 }
 
 func MoneyGothaiBaht(c *gin.Context) {
@@ -47,5 +51,8 @@ func MoneyGothaiBaht(c *gin.Context) {
 		c.JSON(500, gin.H{"error": "Internal server error"})
 		return
 	}
-	c.JSON(http.StatusOK, resp)
+	response := dto.MoneyResponse{
+		Text: resp,
+	}
+	c.JSON(http.StatusOK, response)
 }
