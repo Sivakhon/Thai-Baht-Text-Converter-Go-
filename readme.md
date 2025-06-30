@@ -75,18 +75,12 @@ Header: Content-Type: application/json
 └── README.md                  # Project documentation (you're reading it!)
 ```
 
-## 🧾 Example Output
-```
-Input: 1234.56
-Output: หนึ่งพันสองร้อยสามสิบสี่บาทห้าสิบหกสตางค์
-```
-
 ## 📝 License
 MIT License — use freely for educational and commercial purposes.
 
 ## 🙏 Credits
-shopspring/decimal
-shopspring/decimal
+- [shopspring/decimal](https://github.com/shopspring/decimal)
+- [artykaikub/go-thaibaht](https://github.com/artykaikub/go-thaibaht)
 
 
 
