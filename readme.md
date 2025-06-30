@@ -28,5 +28,10 @@ This project provides a Go-based tool to convert decimal numbers into Thai text 
 go run .
 ```
 
+```bash
+docker compose up --build
 ```
+
+
+
 
