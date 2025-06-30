@@ -42,9 +42,10 @@ The API will be available at:
 http://localhost:8080 (modify this if your app defines a different endpoint)
 
 ## ✅ Example Request
-URL: http://localhost:8080/moneydefault, http://localhost:8080/moneygothaibaht
-Method: GET
-Header: Content-Type: application/json
+URL: http://localhost:8080/moneydefault  
+URL: http://localhost:8080/moneygothaibaht (this service will be inexact float when running in Test Mode)  
+Method: GET  
+Header: Content-Type: application/json  
 
 ```
 {
