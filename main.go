@@ -38,13 +38,16 @@ func runTest() {
 
 	fmt.Println("Testing FloatToText Default:")
 	for _, input := range input {
+
 		model := model.Money{
 			Money: input,
 		}
 		bath_string, _ := services.FloatToTextDefault(model)
 		fmt.Println(bath_string)
 	}
+	fmt.Println("======================================================")
 	fmt.Println("Testing FloatToText Package (using gothaibaht):")
+	fmt.Println("(this service will be inexact float because it's turning decimal.Decimal to float64)")
 	for _, input := range input {
 		model := model.Money{
 			Money: input,

@@ -7,6 +7,6 @@ import (
 
 func SetupRouter(r *gin.Engine) {
 	// Set up the router with the handler
-	r.GET("/moneydefault", handler.MoneyDefault)
-	r.GET("/moneygothaibaht", handler.MoneyGothaiBaht)
+	r.POST("/moneydefault", handler.MoneyDefault)
+	r.POST("/moneygothaibaht", handler.MoneyGothaiBaht)
 }

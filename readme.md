@@ -23,8 +23,7 @@ This project provides a Go-based tool to convert decimal numbers into Thai text 
 ## 🧪 Run Locally
 
 ### Run Converter Function (CLI)
-### Start API
-
+#### 🌐 Run as API Locally
 ```bash
 go run .
 ```
@@ -42,15 +41,18 @@ The API will be available at:
 http://localhost:8080 (modify this if your app defines a different endpoint)
 
 ## ✅ Example Request
-URL: http://localhost:8080/moneydefault  
-URL: http://localhost:8080/moneygothaibaht (this service will be inexact float when running in Test Mode)  
-Method: GET  
-Header: Content-Type: application/json  
+**URL**: http://localhost:8080/moneydefault  
+**URL**: http://localhost:8080/moneygothaibaht (this service will be inexact float when running in Test Mode)  
+**Method**: POST  
+**Header**: Content-Type: application/json  
+**Body**:  
 
 ```
+"""
 {
   "money": 212121.21
 }
+"""
 ```
 🔄 Example Response
 ```
